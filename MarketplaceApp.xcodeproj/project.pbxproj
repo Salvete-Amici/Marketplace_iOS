@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C7CE5A752B8EE45B005457EB /* MarketplaceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CE5A742B8EE45B005457EB /* MarketplaceAppApp.swift */; };
-		C7CE5A772B8EE45B005457EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CE5A762B8EE45B005457EB /* ContentView.swift */; };
 		C7CE5A792B8EE45F005457EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CE5A782B8EE45F005457EB /* Assets.xcassets */; };
 		C7CE5A7C2B8EE45F005457EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CE5A7B2B8EE45F005457EB /* Preview Assets.xcassets */; };
+		C7CE5A872B8EED18005457EB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CE5A862B8EED18005457EB /* User.swift */; };
+		C7CE5A892B8EEEAB005457EB /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CE5A882B8EEEAB005457EB /* Listing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C7CE5A712B8EE45B005457EB /* MarketplaceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketplaceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7CE5A742B8EE45B005457EB /* MarketplaceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketplaceAppApp.swift; sourceTree = "<group>"; };
-		C7CE5A762B8EE45B005457EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C7CE5A782B8EE45F005457EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7CE5A7B2B8EE45F005457EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C7CE5A862B8EED18005457EB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C7CE5A882B8EEEAB005457EB /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +51,10 @@
 		C7CE5A732B8EE45B005457EB /* MarketplaceApp */ = {
 			isa = PBXGroup;
 			children = (
-				C7CE5A742B8EE45B005457EB /* MarketplaceAppApp.swift */,
-				C7CE5A762B8EE45B005457EB /* ContentView.swift */,
+				C7CE5A852B8EE571005457EB /* Networking */,
+				C7CE5A842B8EE56A005457EB /* Controllers */,
+				C7CE5A832B8EE562005457EB /* Views */,
+				C7CE5A822B8EE55A005457EB /* Models */,
 				C7CE5A782B8EE45F005457EB /* Assets.xcassets */,
 				C7CE5A7A2B8EE45F005457EB /* Preview Content */,
 			);
@@ -65,6 +67,36 @@
 				C7CE5A7B2B8EE45F005457EB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C7CE5A822B8EE55A005457EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C7CE5A862B8EED18005457EB /* User.swift */,
+				C7CE5A882B8EEEAB005457EB /* Listing.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C7CE5A832B8EE562005457EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C7CE5A842B8EE56A005457EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C7CE5A852B8EE571005457EB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +131,7 @@
 				TargetAttributes = {
 					C7CE5A702B8EE45B005457EB = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -137,8 +170,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7CE5A772B8EE45B005457EB /* ContentView.swift in Sources */,
-				C7CE5A752B8EE45B005457EB /* MarketplaceAppApp.swift in Sources */,
+				C7CE5A892B8EEEAB005457EB /* Listing.swift in Sources */,
+				C7CE5A872B8EED18005457EB /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MarketplaceApp/Preview Content\"";
@@ -287,6 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Shaliwa.MarketplaceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,6 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MarketplaceApp/Preview Content\"";
